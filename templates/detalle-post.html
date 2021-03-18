@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Detalle Post{% endblock %}
+
+{% block content %}
+<section class="detalle">
+    <h2 class="detalle__header">
+        {{ post.titulo }}
+    </h2>
+    <p class="detalle__paragraph">
+        {{ post.resumen }}
+    </p>
+</section>
+
+
+{% endblock %}

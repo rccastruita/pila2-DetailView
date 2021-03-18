@@ -1,0 +1,39 @@
+* {
+    text-decoration: none;
+    color:unset;
+}
+
+body {
+    background-color: #999;
+    font-family: sans-serif;
+}
+
+header {
+    backgroun-color: white;
+    width: 80%;
+}
+
+main {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 2em 4em;
+}
+
+section {
+    background-color: #ddd;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post__header {
+    margin-top: 0;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.post__header:hover {
+    color: rgba(255, 255, 255, 0.8);
+}

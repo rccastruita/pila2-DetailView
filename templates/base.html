@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">        
+
+        <title>{% block title %}Codigo Espagueti{% endblock %}</title>
+        {% block extra_head %}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="{% url 'home' %}">Mis Posts</a>
+            </h1>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

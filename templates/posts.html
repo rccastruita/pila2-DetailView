@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<main>
+    <h1 class="header-primary">
+        Mis Posts
+    </h1>
+    {% for post in posts %}
+    <section class="post">
+        <h1 class="post__header">
+            <a href="{% url 'detail' post.pk %}">{{ post.titulo }}</a>
+        </h1>
+        <p class="post__author">
+            Por: {{ post.autor }}
+        </p>
+        <p class="post__content">
+            {{ post.resumen }}
+        </p>
+    </section>
+    {% endfor %}
+</main>
+{% endblock %}
